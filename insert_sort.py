@@ -4,12 +4,13 @@ class Solution(object):
         length = len(array)
         for i in range(1, length):
             key = array[i]
-            j = i-1;
-            while j >=0:
-                if key < array[j]:
-                    array[j + 1] = array[j]
-                    array[j] = key
+            j = i;
+            while j > 0:
+                if key < array[j-1]:
+                    array[j] = array[j-1]
+                    array[j-1] = key
                 j -= 1
+                print(j)
         return array
 
 

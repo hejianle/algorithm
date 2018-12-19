@@ -22,10 +22,10 @@ class Solution(object):
 class TestPower(unittest.TestCase):
 
     def test_positive_n(self):
-        a = 1.1
-        n = 2
+        a = 4
+        n = 5
         result = Solution().power(a, n)
-        self.assertEqual(result, a * a)
+        self.assertEqual(result, a * a * a * a * a)
 
     def test_negtive_n(self):
         a = 1.1
